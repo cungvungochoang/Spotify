@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.MinimizedMusicPlayerFargment"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:weightSum="10"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:src="@drawable/default_logo"
+            android:id="@+id/img"
+            />
+
+        <LinearLayout android:layout_weight="10"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                android:textSize="15sp"
+                android:text="Tên bài hát"
+                android:textColor="@color/foreground_musicplayer"
+                android:textStyle="bold"
+                android:ellipsize ="end"
+                android:maxLines="1"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvArtistNames"
+                android:textSize="10sp"
+                android:text="Tên nghệ sĩ"
+                android:textColor="@color/foreground_musicplayer"
+                android:textStyle="normal"
+                android:maxLines="1"
+                android:ellipsize ="end"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <ImageButton
+                android:id="@+id/btnBackSong"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_nextsong"
+                android:rotation="0"
+                />
+
+            <com.example.spotify_app.CustomView.CustomCheckBox
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/ckbPlay"
+                android:antialias="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+
+                />
+
+
+
+            <ImageButton
+                android:id="@+id/btnNextSong"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_nextsong"
+                android:rotation="180"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

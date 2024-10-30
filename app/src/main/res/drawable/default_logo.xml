@@ -1,0 +1,22 @@
+<vector android:height="150dp"
+    android:viewportHeight="40"
+    android:viewportWidth="40"
+    android:width="150dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <group android:translateX="8"
+        android:translateY="8"
+        >
+        <path android:fillColor="@color/foreground_musicplayer_40"
+            android:pathData="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"
+            android:strokeColor="@color/foreground_musicplayer_60"
+            android:strokeWidth="15"
+            />
+        <path android:fillColor="@color/foreground_musicplayer"
+            android:pathData="M21,3V15.5A3.5,3.5 0 0,1 17.5,19A3.5,3.5 0 0,1 14,15.5A3.5,3.5 0 0,1 17.5,12C18.04,12 18.55,12.12 19,12.34V6.47L9,8.6V17.5A3.5,3.5 0 0,1 5.5,21A3.5,3.5 0 0,1 2,17.5A3.5,3.5 0 0,1 5.5,14C6.04,14 6.55,14.12 7,14.34V6L21,3Z"
+            />
+
+
+    </group>
+</vector>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/library_tab"
+        android:icon="@drawable/ic_library_music"
+        android:title="Library"/>
+    <item
+        android:id="@+id/home_tab"
+        android:icon="@drawable/home_ic"
+        android:title="Home"/>
+    <item
+        android:id="@+id/playlist_tab"
+        android:icon="@drawable/music_filter_ic"
+        android:title="Playlist"/>
+    <item
+        android:id="@+id/history_tab"
+        android:icon="@drawable/clock_ic"
+        android:title="History"/>
+    <item
+        android:id="@+id/profile_tab"
+        android:icon="@drawable/frame_ic"
+        android:title="Profile"/>
+</menu>

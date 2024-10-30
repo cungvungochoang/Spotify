@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_marginHorizontal="3dp"
+        android:orientation="vertical"
+        android:layout_width="@dimen/width_cardplaylist"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_ripple"
+        android:padding="5dp"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_album"
+            android:layout_width="@dimen/width_cardplaylist"
+            android:layout_height="128dp"
+            android:adjustViewBounds="true"
+            app:riv_corner_radius="8dp"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:id="@+id/tv_title_al"
+            android:layout_width="@dimen/width_cardplaylist"
+            android:layout_height="20dp"
+            android:lineSpacingExtra="3sp"
+            android:text="Runtuh"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/tv_artist_al"
+            android:layout_width="@dimen/width_cardplaylist"
+            android:layout_height="20dp"
+            android:lineSpacingExtra="5sp"
+            android:text="Runtuh"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</LinearLayout>

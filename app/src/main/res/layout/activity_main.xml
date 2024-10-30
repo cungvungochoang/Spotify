@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="12"
+            >
+
+        <FrameLayout
+            android:id="@+id/fm_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_weight="11"
+
+            />
+
+        <!-- SmallMusicPlayer -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/flContainerSmallMusicPlayer"
+            android:alpha="1"
+            android:padding="0dp"
+            />
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/menu_navigation"
+            app:labelVisibilityMode="labeled"
+            android:background="@color/bg_secondary"
+            app:itemIconTint="@color/navigation_color"
+            app:itemTextColor="@color/navigation_color"
+            android:layout_alignParentBottom="true"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

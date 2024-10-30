@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_album"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            app:riv_corner_radius="8dp"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:id="@+id/tv_title_pl"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:lineSpacingExtra="3sp"
+            android:text="Runtuh"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tv_total_pl"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:lineSpacingExtra="5sp"
+            android:text="Runtuh"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</LinearLayout>

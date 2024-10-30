@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.ListSongMusicPlayerFragment"
+    android:background="@color/backgound_musicplayer"
+    android:id="@+id/flMainContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        >
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:id="@+id/header"
+            android:paddingBottom="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_btnback"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Now Playing"
+                android:textColor="@color/foreground_musicplayer"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:id="@+id/tvNotification"
+                />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <LinearLayout android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <com.google.android.material.tabs.TabLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="40dp"
+                android:layout_height="5dp"
+                app:tabIndicator="@drawable/tab_indicator"
+                app:tabIndicatorColor="@color/coloricon"
+                app:tabIndicatorHeight="5dp"
+                android:background="@color/transparent"
+                android:id="@+id/tabLayout"
+                android:layout_marginBottom="5dp"
+                />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/viewPager"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
